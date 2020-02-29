@@ -1,18 +1,13 @@
 body, html {
 	height: 100%;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
+	background-color: #B8E6F2;
 }
 
-.hero-image {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-image.jpg");
-
+.hero-color {
+	background-color: #B8E6F2;
 	height: 100%;
-
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
 }
 
 .hero-text {
@@ -24,21 +19,23 @@ body, html {
 }
 
 .about-me {
-	display: block;
 	text-align: center;
 	background-color: #FBC438;
 	width: 100%;
+	margin: 0;
 }
 
 h1 {
 	font-size: 42px;
 	font-family: "Open Sans", sans-serif; 
+	margin: 0;
 }
 
 p, li {
 	font-size: 24px;
 	font-family: "Open Sans", sans-serif;
 	text-align: center;
+	margin: 0;
 }
 
 h2 {
