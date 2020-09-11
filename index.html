@@ -1,27 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kristjan Pärnmets</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
-    <nav>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+    <div id="container" class="container">
+        <ul id="nav" class="nav justify-content-center align-items-center sticky-top">
+            <li class="nav-item">
+                <a class="nav-link" href="#container">🏠</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#aboutme">About me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
         </ul>
-    </nav>
-    <section class="landing">
-        <h1>Kristjan Pärnmets</h1>
-    </section>
-    <script src="app.js"></script>
+
+        <section id="header" class="d-flex">
+            <div>
+                <h1>Hey!</h1>
+                <p>My name is Kristjan and I am an aspiring web developer.</p>
+            </div>
+            <img class="img-fluid" src="./img/mina.jpg" alt="picture of me">
+        </section>
+
+        <section id="aboutme" class="d-flex justify-content-center align-items-center flex-column">
+            <p>During high school I had a certain plan to go to university. I have always been very interested in
+                computers, but there's also a language fanatic side of me. The fanatic took over, hence the reason why I
+                am studying Estonian language and literature. However, I still have not lost my keen interest in web
+                development, programming and data science, which is why I want to become a web developer.</p>
+            <p>Now that I am on my last year of bachelor's degree, I plan on continuing into the world of web design &
+                development at <a href="https://www.tptlive.ee/">Tallinn Polytechnic School</a>. Why? <strong>I need
+                    that paper, bro.</strong> Nobody is going
+                to believe my heartfelt interest otherwise. At least I think so... or fear so.</p>
+        </section>
+
+        <section id="projects" class="d-flex justify-content-center align-items-center">
+            <h1>Projects</h1>
+        </section>
+
+        <section id="contact" class="row justify-content-center align-items-center flex-column">
+            <div class="col-auto">
+                <table class="table table-responsive table-borderless">
+                    <tr>
+                        <td>
+                            <img src="./img/discord.svg" alt="Discord">
+                        </td>
+                        <td>
+                            <p>Kristjan#9334</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="./img/facebook.svg" alt="Facebook"></td>
+                        <td>
+                            <p>Kristjan Pärnmets</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="./img/gmail.svg" alt="Gmail"></td>
+                        <td>
+                            <p>kristjanparnmets@gmail.com</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="./img/instagram.svg" alt="Instagram"></td>
+                        <td>
+                            <p>@pxrnmets</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="./img/linkedin.svg" alt="LinkedIn"></td>
+                        <td>
+                            <p>Kristjan Pärnmets</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <a class="text-center" href="cv.html" id="cv">Want to check out my CV?</a>
+        </section>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
