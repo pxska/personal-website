@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kristjan Pärnmets</title>
     <link rel="stylesheet" href="style.css">
+    <link href="./font-awesome/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="index.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174693673-1"></script>
     <script>
@@ -25,27 +27,39 @@
 
 <body>
     <div id="container" class="container">
-        <ul id="nav" class="nav justify-content-center align-items-center sticky-top">
-            <li class="nav-item">
-                <a class="nav-link" href="#container">🏠</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#aboutme">About me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-            </li>
-        </ul>
-
-        <section id="header" class="d-flex">
-            <div>
-                <h1>Hey!</h1>
-                <p>My name is Kristjan and I am an aspiring web developer.</p>
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbar">
+                <ul class="navbar-nav text-right mt-2 mt-lg-0">
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                        <a class="nav-link" href="#container">🏠</a>
+                    </li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                        <a class="nav-link" href="#aboutme">About me</a>
+                    </li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <img class="img-fluid" src="./img/mina.jpg" alt="picture of me">
+        </nav>
+
+        <section>
+            <div id="header">
+                <div>
+                    <h1>Hey!</h1>
+                    <p>My name is Kristjan and I am an aspiring web developer.</p>
+                </div>
+                <img class="img-fluid" src="./img/mina.jpg" alt="picture of me">
+            </div>
+            <div class="d-flex justify-content-center">
+                <i id="scroll-down" class="fas fa-arrow-down"></i>
+            </div>
         </section>
 
         <section id="aboutme" class="d-flex justify-content-center align-items-center flex-column">
@@ -75,27 +89,22 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><img src="./img/facebook.svg" alt="Facebook"></td>
-                        <td>
-                            <p>Kristjan Pärnmets</p>
-                        </td>
-                    </tr>
-                    <tr>
                         <td><img src="./img/gmail.svg" alt="Gmail"></td>
                         <td>
-                            <p>kristjanparnmets@gmail.com</p>
+                            <p><a href="mailto:kristjanparnmets@gmail.com">kristjanparnmets@gmail.com</a></p>
                         </td>
                     </tr>
                     <tr>
                         <td><img src="./img/instagram.svg" alt="Instagram"></td>
                         <td>
-                            <p>@pxrnmets</p>
+                            <p><a href="https://www.instagram.com/pxrnmets" target="_blank">@pxrnmets</a></p>
                         </td>
                     </tr>
                     <tr>
                         <td><img src="./img/linkedin.svg" alt="LinkedIn"></td>
                         <td>
-                            <p>Kristjan Pärnmets</p>
+                            <p><a href="https://www.linkedin.com/in/kristjan-parnmets/" target="_blank">Kristjan
+                                    Pärnmets</a></p>
                         </td>
                     </tr>
                 </table>

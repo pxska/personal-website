@@ -1,61 +1,101 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #eeeeee !important;
+  font-size: 1.25rem !important;
 }
 
 #header img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 #header {
-    height: 90vh;
-    justify-content: space-between;
-    align-items: center;
+  height: 85vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#scroll-down {
+  height: 5vh;
+  text-align: center;
 }
 
 #aboutme,
 #projects,
 #contact {
-    height: 100vh;
+  height: 100vh;
 }
 
 .nav {
-    height: 10vh;
+  height: 10vh;
 }
 
-.nav li a {
-    text-decoration: none;
-    color: #2D561D;
-    font-weight: 500;
+#navbar ul li a {
+  text-decoration: none;
+  color: #2d561d;
+  font-weight: 500;
+  padding: 15px 20px 0px 20px;
 }
 
-.nav li a:hover {
-    animation: tada;
-    animation-duration: 1s;
+#navbar ul li a:hover {
+  animation: tada;
+  animation-duration: 1s;
 }
 
 #contact img {
-    width: 2rem;
-    height: 2rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .social-icon {
-    display: flex;
+  display: flex;
 }
 
 #cv_header {
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.cv_container {
+  width: 60%;
+}
+
+#leftcolumn {
+  background-color: #f0f0f0;
+  color: #1f1f1f;
+}
+
+#rightcolumn {
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+}
+
+.fname,
+.lname {
+  font-size: 5rem;
+}
+
+button:focus {
+  outline: none !important;
 }
 
 @media screen and (max-width: 768px) {
-    #header {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
+  #header {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #navbar ul li a:hover {
+    animation: none;
+  }
 }
