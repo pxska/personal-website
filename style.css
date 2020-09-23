@@ -43,6 +43,8 @@ body {
 
 #header img {
   border-radius: 50%;
+  width: 500px;
+  height: auto;
 }
 
 #header {
@@ -131,6 +133,10 @@ body {
 /* MOBILE RESPONSIVENESS */
 
 @media screen and (max-width: 768px) {
+  #header img {
+    width: 300px;
+  }
+
   #header {
     flex-direction: column;
     justify-content: center;
