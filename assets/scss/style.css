@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-color: #f8fdfa;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 10vh;
+}
+
+.nav-link {
+  color: #020804;
+  padding: 0 0 0 25px;
+}
+
+nav span {
+  color: #020804;
+  padding: 0 25px 0 0;
+}
+
+#nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+nav a span:hover, .nav-link:hover {
+  color: #1e8449;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hero-text-heading {
+  font-size: 80px;
+  font-weight: 400;
+  margin-top: 0;
+  color: #1e8449;
+}
+
+#hero-text-small {
+  font-size: 35px;
+}
+
+.hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero-image {
+  float: right;
+}
+
+.hero-image img {
+  width: 500px;
+  height: auto;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=style.css.map */

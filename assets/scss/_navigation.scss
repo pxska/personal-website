@@ -1,0 +1,26 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+.nav-link {
+  color: $text-color;
+  padding: 0 0 0 25px;
+}
+
+nav span {
+  color: $text-color;
+  padding: 0 25px 0 0;
+}
+
+#nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: end;
+}
+
+nav a span:hover, .nav-link:hover {
+  color: $base-color;
+}

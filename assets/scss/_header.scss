@@ -1,0 +1,33 @@
+
+header {
+  display: flex;
+  height: 90vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hero-text-heading {
+  font-size: 80px;
+  font-weight: 400;
+  margin-top: 0;
+  color: $base-color;
+}
+
+#hero-text-small {
+  font-size: 35px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-image {
+  float: right;
+}
+
+.hero-image img {
+  width: 500px;
+  height: auto;
+  border-radius: 50%;
+}
